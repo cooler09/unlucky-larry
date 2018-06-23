@@ -5,7 +5,9 @@
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="EnemyData.cs" t="Include" />
         <e p="GameLoad.cs" t="Include" />
+        <e p="Global.cs" t="Include" />
         <e p="load_trivia.cs" t="Include" />
         <e p="Movement.cs" t="Include" />
         <e p="Plugins" t="Include">
@@ -18,6 +20,7 @@
         <e p="Scripts" t="Include">
           <e p="Answer.cs" t="Include" />
           <e p="ImageLoader.cs" t="Include" />
+          <e p="JsonObject.cs" t="Include" />
           <e p="LoadScene.cs" t="Include" />
           <e p="Question.cs" t="Include" />
           <e p="QuestionApi.cs" t="Include" />

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,10 +16,13 @@ public class LoadScene : MonoBehaviour {
 
     public GameObject ImageLoader;
 
+    private List<Question> _currentQuestions;
+
     // Use this for initialization
     void Start () {
-//        WWW api = new WWW("http://localhost:54724/api/values");
-//        StartCoroutine(WaitForWWW(api));
+        //get questions
+        StartCoroutine(GetCurrentQuestions());
+        
 
         Button btn = Answer1.GetComponent<Button>();
         btn.onClick.AddListener(delegate { Answer(1); });
@@ -43,11 +47,50 @@ public class LoadScene : MonoBehaviour {
         LeftImage.GetComponent<Image>().sprite = images.Larry;
         RightImage.GetComponent<Image>().sprite = images.Jocks;
     }
+
+    IEnumerator  GetCurrentQuestions()
+    {
+        var group = Global.CurrentEnemy;
+        var api = new WWW(Global.ServerBaseUrl + "QuestionData?group="+group);
+        yield return api;
+
+//        Debug.Log(
+//            JsonConvert.DeserializeObject<List<Question>>(
+//                "[{'title':'In what sport is a panty pass?','answers':[{'id':1,'title':'Lacrosse','questionId':1,'question':null},{'id':2,'title':'Curling','questionId':1,'question':null},{'id':3,'title':'Roller Derby','questionId':1,'question':null},{'id':4,'title':'Horse Racing','questionId':1,'question':null}]}]"));
+        if (string.IsNullOrEmpty(api.error))
+        {
+            
+        }
+        else
+            Debug.Log(api.error);
+        
+
+    }
+    
     void Answer(int answerId)
     {
         Debug.Log("clicked" + answerId);
         Destroy(gameObject);
         
+    }
+    public Transform FindObjectwithTag(string tag)
+    {
+        return GetChildObject(transform, tag);
+    }
+ 
+    public Transform GetChildObject(Transform parent, string tag)
+    {
+        if (parent.CompareTag(tag))
+        {
+            return parent;
+        }
+        for (int i = 0; i < parent.childCount; i++)
+        {
+            Transform child = parent.GetChild(i);
+            return GetChildObject(child, tag);
+
+        }
+        return null;
     }
     
 

@@ -1,8 +1,9 @@
 ﻿namespace DefaultNamespace
 {
+    [System.Serializable]
     public class Answer
     {
-        public int Id { get; set; }
-        public string Title { get; set; }
+        public int id { get; set; }
+        public string title { get; set; }
     }
 }
