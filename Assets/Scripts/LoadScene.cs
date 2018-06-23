@@ -17,8 +17,8 @@ public class LoadScene : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        WWW api = new WWW("http://localhost:54724/api/values");
-        StartCoroutine(WaitForWWW(api));
+//        WWW api = new WWW("http://localhost:54724/api/values");
+//        StartCoroutine(WaitForWWW(api));
 
         Button btn = Answer1.GetComponent<Button>();
         btn.onClick.AddListener(delegate { Answer(1); });
@@ -43,25 +43,12 @@ public class LoadScene : MonoBehaviour {
         LeftImage.GetComponent<Image>().sprite = images.Larry;
         RightImage.GetComponent<Image>().sprite = images.Jocks;
     }
-    void Click(int answerId)
-    {
-        Debug.Log("clicked" + answerId);
-    }
     void Answer(int answerId)
     {
-        //send answer to game server
+        Debug.Log("clicked" + answerId);
+        Destroy(gameObject);
+        
     }
-    IEnumerator WaitForWWW(WWW www)
-    {
-        yield return www;
-
-
-        string txt = "";
-        if (string.IsNullOrEmpty(www.error))
-            txt = www.text;  //text of success
-        else
-            txt = www.error;  //error
-        Debug.Log(txt);
-    }
+    
 
 }
