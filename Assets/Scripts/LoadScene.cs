@@ -19,6 +19,8 @@ public class LoadScene : MonoBehaviour {
 
     private List<Question> _allQuestions;
     private Dictionary<int,Question> _currentQuestions = new Dictionary<int, Question>();
+    private int currentQuestion;
+    private bool gameOver = false;
 
     // Use this for initialization
     void Start () {
@@ -97,6 +99,15 @@ public class LoadScene : MonoBehaviour {
         }
     }
 
+    void Update()
+    {
+        if (gameOver)
+        {
+            //post api question data
+            //play clip
+            Destroy(gameObject);
+        }
+    }
     IEnumerator  GetCurrentQuestions()
     {
         var group = Global.CurrentEnemy;
@@ -114,9 +125,7 @@ public class LoadScene : MonoBehaviour {
     
     void Answer(int answerId)
     {
-        Debug.Log("clicked" + answerId);
-        Destroy(gameObject);
-        
+        gameOver = true;
     }
     
 

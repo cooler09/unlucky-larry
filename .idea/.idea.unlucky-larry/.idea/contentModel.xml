@@ -18,16 +18,12 @@
         <e p="Scripts" t="Include">
           <e p="Answer.cs" t="Include" />
           <e p="EnemyData.cs" t="Include" />
-          <e p="GameLoad.cs" t="Include" />
           <e p="Global.cs" t="Include" />
-          <e p="GlobalAccess.cs" t="Include" />
           <e p="GroupLogic.cs" t="Include" />
           <e p="ImageLoader.cs" t="Include" />
-          <e p="JsonObject.cs" t="Include" />
           <e p="LoadScene.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
           <e p="Question.cs" t="Include" />
-          <e p="QuestionApi.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />

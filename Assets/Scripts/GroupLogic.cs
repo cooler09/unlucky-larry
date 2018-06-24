@@ -8,7 +8,7 @@ public class GroupLogic : MonoBehaviour
 {
 
 	public string EnemyName;
-	//public AudioClip SceneEnter;
+	public AudioClip SceneEnter;
 	private AudioSource _audioSource;
 	private bool _moveToNextScene;
 
@@ -32,10 +32,8 @@ public class GroupLogic : MonoBehaviour
 	{
 		if(col.gameObject.CompareTag("Player"))
 		{
-			var clip2 = Resources.Load("Audio/poker-chips");
-			Debug.Log(clip2);
-			//_audioSource.clip = clip2;
-			//_audioSource.Play();
+			_audioSource.clip = SceneEnter;
+			_audioSource.Play();
 			_moveToNextScene = true;
 		}
 	}
