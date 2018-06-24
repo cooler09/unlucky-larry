@@ -6,4 +6,5 @@ public class ImageLoader : MonoBehaviour {
 
     public Sprite Larry;
     public Sprite Jocks;
+    public Sprite Emo;
 }

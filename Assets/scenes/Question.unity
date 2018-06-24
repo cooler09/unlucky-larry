@@ -265,7 +265,6 @@ GameObject:
   - component: {fileID: 572004327}
   - component: {fileID: 572004326}
   - component: {fileID: 572004325}
-  - component: {fileID: 572004324}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -273,13 +272,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &572004324
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 572004323}
-  m_Enabled: 1
 --- !u!124 &572004325
 Behaviour:
   m_ObjectHideFlags: 0
@@ -1617,6 +1609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Larry: {fileID: 21300000, guid: 9e621eaf8a30cc64f9a19e83f35b1c91, type: 3}
   Jocks: {fileID: 21300000, guid: f482fa54e1eeac54aaa7559417040a3f, type: 3}
+  Emo: {fileID: 21300000, guid: 2cb16810ce2e4ad46a04c0a9846053c1, type: 3}
 --- !u!4 &2135764759
 Transform:
   m_ObjectHideFlags: 0

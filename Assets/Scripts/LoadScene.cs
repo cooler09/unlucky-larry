@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,17 +17,53 @@ public class LoadScene : MonoBehaviour {
 
     public GameObject ImageLoader;
 
-    private List<Question> _currentQuestions;
+    private List<Question> _allQuestions;
+    private Dictionary<int,Question> _currentQuestions = new Dictionary<int, Question>();
 
     // Use this for initialization
     void Start () {
         //get questions
         StartCoroutine(GetCurrentQuestions());
         
+        for (int i = 0; i < 10; i++)
+        {
+            var rng = Random.Range(0, _allQuestions.Count);
+            var ques = _allQuestions[rng];
+            _currentQuestions.Add(ques.id,ques);
+        }
+        
 
-        Button btn = Answer1.GetComponent<Button>();
-        btn.onClick.AddListener(delegate { Answer(1); });
-        btn.GetComponentsInChildren<Text>()[0].text = "Orange";
+        Button btn;
+        foreach (var q in _allQuestions)
+        {
+            for (int i = 0; i < q.answers.Count; i++)
+            {
+                var answer = q.answers[i];
+                switch (i)
+                {
+                    case 0:
+                        btn = Answer1.GetComponent<Button>();
+                        btn.onClick.AddListener(delegate { Answer(answer.id); });
+                        btn.GetComponentsInChildren<Text>()[0].text = answer.title;
+                        break;
+                    case 1:
+                        btn = Answer2.GetComponent<Button>();
+                        btn.onClick.AddListener(delegate { Answer(answer.id); });
+                        btn.GetComponentsInChildren<Text>()[0].text = answer.title;
+                        break;
+                    case 2:
+                        btn = Answer3.GetComponent<Button>();
+                        btn.onClick.AddListener(delegate { Answer(answer.id); });
+                        btn.GetComponentsInChildren<Text>()[0].text = answer.title;
+                        break;
+                    case 3:
+                        btn = Answer4.GetComponent<Button>();
+                        btn.onClick.AddListener(delegate { Answer(answer.id); });
+                        btn.GetComponentsInChildren<Text>()[0].text = answer.title;
+                        break;
+                }
+            }
+        }
 
         btn = Answer2.GetComponent<Button>();
         btn.onClick.AddListener(delegate { Answer(2); });
@@ -45,7 +82,19 @@ public class LoadScene : MonoBehaviour {
         var images = ImageLoader.GetComponent<ImageLoader>();
         
         LeftImage.GetComponent<Image>().sprite = images.Larry;
-        RightImage.GetComponent<Image>().sprite = images.Jocks;
+        switch (Global.CurrentEnemy)
+        {
+                case "jocks":
+                    RightImage.GetComponent<Image>().sprite = images.Jocks;
+                    break;
+                case "emo":
+                    
+                    RightImage.GetComponent<Image>().sprite = images.Emo;
+                    break;
+                default:
+                    RightImage.GetComponent<Image>().sprite = images.Jocks;
+                    break;
+        }
     }
 
     IEnumerator  GetCurrentQuestions()
@@ -53,13 +102,9 @@ public class LoadScene : MonoBehaviour {
         var group = Global.CurrentEnemy;
         var api = new WWW(Global.ServerBaseUrl + "QuestionData?group="+group);
         yield return api;
-
-//        Debug.Log(
-//            JsonConvert.DeserializeObject<List<Question>>(
-//                "[{'title':'In what sport is a panty pass?','answers':[{'id':1,'title':'Lacrosse','questionId':1,'question':null},{'id':2,'title':'Curling','questionId':1,'question':null},{'id':3,'title':'Roller Derby','questionId':1,'question':null},{'id':4,'title':'Horse Racing','questionId':1,'question':null}]}]"));
         if (string.IsNullOrEmpty(api.error))
         {
-            
+            _allQuestions = JsonConvert.DeserializeObject<List<Question>>(api.text);
         }
         else
             Debug.Log(api.error);
@@ -72,25 +117,6 @@ public class LoadScene : MonoBehaviour {
         Debug.Log("clicked" + answerId);
         Destroy(gameObject);
         
-    }
-    public Transform FindObjectwithTag(string tag)
-    {
-        return GetChildObject(transform, tag);
-    }
- 
-    public Transform GetChildObject(Transform parent, string tag)
-    {
-        if (parent.CompareTag(tag))
-        {
-            return parent;
-        }
-        for (int i = 0; i < parent.childCount; i++)
-        {
-            Transform child = parent.GetChild(i);
-            return GetChildObject(child, tag);
-
-        }
-        return null;
     }
     
 
