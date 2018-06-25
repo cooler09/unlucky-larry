@@ -17,13 +17,28 @@ public class LoadScene : MonoBehaviour {
 
     public GameObject ImageLoader;
 
-    private List<Question> _allQuestions;
+    private List<Question> _allQuestions = new List<Question>();
     private Dictionary<int,Question> _currentQuestions = new Dictionary<int, Question>();
     private int currentQuestion;
     private bool gameOver = false;
 
     // Use this for initialization
     void Start () {
+        var images = ImageLoader.GetComponent<ImageLoader>();
+        
+        LeftImage.GetComponent<Image>().sprite = images.Larry;
+        switch (Global.CurrentEnemy)
+        {
+            case "jocks":
+                //RightImage.GetComponent<Image>().sprite = images.Jocks;
+                break;
+            case "emo":
+                var emo = images.Emo;
+                emo.transform.position = RightImage.transform.position;
+                emo.transform.parent = RightImage.transform;
+                Instantiate(emo);
+                break;
+        }
         //get questions
         StartCoroutine(GetCurrentQuestions());
         
@@ -81,22 +96,7 @@ public class LoadScene : MonoBehaviour {
 
         Question.GetComponent<Text>().text = "What is the biggest?";
 
-        var images = ImageLoader.GetComponent<ImageLoader>();
         
-        LeftImage.GetComponent<Image>().sprite = images.Larry;
-        switch (Global.CurrentEnemy)
-        {
-                case "jocks":
-                    RightImage.GetComponent<Image>().sprite = images.Jocks;
-                    break;
-                case "emo":
-                    
-                    RightImage.GetComponent<Image>().sprite = images.Emo;
-                    break;
-                default:
-                    RightImage.GetComponent<Image>().sprite = images.Jocks;
-                    break;
-        }
     }
 
     void Update()

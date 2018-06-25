@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/Question.unity
     guid: 309185da12a95064a94fc170d9520fdc
+  - enabled: 1
+    path: Assets/scenes/Menu.unity
+    guid: 6beea9b3b6b769346839423dc50056e6
+  - enabled: 1
+    path: Assets/scenes/GameStart.unity
+    guid: 8bd2e530063e29f49b4efe77bd131453
   m_configObjects: {}

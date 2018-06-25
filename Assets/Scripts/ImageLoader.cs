@@ -5,6 +5,6 @@ using UnityEngine;
 public class ImageLoader : MonoBehaviour {
 
     public Sprite Larry;
-    public Sprite Jocks;
-    public Sprite Emo;
+    public GameObject Jocks;
+    public GameObject Emo;
 }
