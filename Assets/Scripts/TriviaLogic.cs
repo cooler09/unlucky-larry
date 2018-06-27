@@ -47,7 +47,7 @@ public class TriviaLogic : MonoBehaviour
 			return;
 		}
 
-		if (loadNextQuestion && DateTime.Now > answerTimer.AddSeconds(2.0))
+		if (loadNextQuestion )//&& DateTime.Now > answerTimer.AddSeconds(2.0))
 		{
 			Debug.Log("load next");
 			LoadNextQuestion();
@@ -76,7 +76,6 @@ public class TriviaLogic : MonoBehaviour
 		for (int i = 0; i < 4; i++)
 		{
 			var a = currentQuestion.answers[i].id;
-			Debug.Log(i+" "+a);
 			Color color = (correctAnswerId == a) ? Color.green : Color.red;
 			switch (i)
 			{
@@ -110,8 +109,11 @@ public class TriviaLogic : MonoBehaviour
 
 	void LoadQuestions()
 	{
+		Debug.Log("Loading Questions for: " + Global.CurrentEnemy);
 		questions = Global.TriviaInfo[Global.CurrentEnemy].Questions;
+		Debug.Log("Loading Questions for: " + Global.CurrentEnemy);
 		loadNextQuestion = true;
+		Debug.Log("Loading Questions for: " + Global.CurrentEnemy);
 	}
 	void LoadNextQuestion()
 	{
@@ -145,6 +147,7 @@ public class TriviaLogic : MonoBehaviour
 
 	void Done()
 	{
+		currentQuestionCount = 0;
 		questions = null;
 		Global.CanMove = true;
 		Global.showTrivia = false;
