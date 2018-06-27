@@ -39,15 +39,6 @@ public class LoadScene : MonoBehaviour {
                 Instantiate(emo);
                 break;
         }
-        //get questions
-        StartCoroutine(GetCurrentQuestions());
-        
-        for (int i = 0; i < 10; i++)
-        {
-            var rng = Random.Range(0, _allQuestions.Count);
-            var ques = _allQuestions[rng];
-            _currentQuestions.Add(ques.id,ques);
-        }
         
 
         Button btn;
@@ -107,20 +98,6 @@ public class LoadScene : MonoBehaviour {
             //play clip
             Destroy(gameObject);
         }
-    }
-    IEnumerator  GetCurrentQuestions()
-    {
-        var group = Global.CurrentEnemy;
-        var api = new WWW(Global.ServerBaseUrl + "QuestionData?group="+group);
-        yield return api;
-        if (string.IsNullOrEmpty(api.error))
-        {
-            _allQuestions = JsonConvert.DeserializeObject<List<Question>>(api.text);
-        }
-        else
-            Debug.Log(api.error);
-        
-
     }
     
     void Answer(int answerId)

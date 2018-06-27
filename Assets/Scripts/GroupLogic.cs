@@ -11,6 +11,7 @@ public class GroupLogic : MonoBehaviour
 	public AudioClip SceneEnter;
 	private AudioSource _audioSource;
 	private bool _moveToNextScene;
+	
 
 	void Start()
 	{
@@ -25,13 +26,15 @@ public class GroupLogic : MonoBehaviour
 			_moveToNextScene = false;
 			
 			Global.CurrentEnemy = EnemyName;
-			SceneManager.LoadScene("scenes/Question", LoadSceneMode.Additive);
+			Global.showTrivia = true;
+			//SceneManager.LoadScene("scenes/Trivia", LoadSceneMode.Additive);
 		}
 	}
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if(col.gameObject.CompareTag("Player"))
 		{
+			Global.CanMove = false;
 			_audioSource.clip = SceneEnter;
 			_audioSource.Play();
 			_moveToNextScene = true;
