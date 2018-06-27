@@ -8,6 +8,7 @@ namespace DefaultNamespace
     {
         public int id { get; set; }
         public string title { get; set; }
+        public int correctAnswerId { get; set; }
         public List<Answer> answers { get; set; }
     }
 }

@@ -5,10 +5,6 @@
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="AnimatedSection.cs" t="Include" />
-        <e p="buttonclick.cs" t="Include" />
-        <e p="EndGame.cs" t="Include" />
-        <e p="GameState.cs" t="Include" />
         <e p="JsonDotNet" t="Include">
           <e p="link.xml" t="Include" />
         </e>
@@ -19,20 +15,22 @@
             </e>
           </e>
         </e>
+        <e p="ScoreText.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="AnimatedSection.cs" t="Include" />
           <e p="Answer.cs" t="Include" />
-          <e p="EnemyData.cs" t="Include" />
+          <e p="EndGame.cs" t="Include" />
+          <e p="GameState.cs" t="Include" />
           <e p="GameStateData.cs" t="Include" />
           <e p="Global.cs" t="Include" />
           <e p="GroupLogic.cs" t="Include" />
-          <e p="ImageLoader.cs" t="Include" />
-          <e p="LoadScene.cs" t="Include" />
+          <e p="GroupName.cs" t="Include" />
           <e p="Menu.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
           <e p="Question.cs" t="Include" />
           <e p="TriviaInfo.cs" t="Include" />
+          <e p="TriviaLogic.cs" t="Include" />
         </e>
-        <e p="TriviaLogic.cs" t="Include" />
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />

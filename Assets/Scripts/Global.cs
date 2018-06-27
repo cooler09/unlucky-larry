@@ -10,6 +10,7 @@ namespace DefaultNamespace
         public static Dictionary<string, TriviaInfo> TriviaInfo;
         public static bool CanMove = true;
         public static bool showTrivia = false;
+        public static int Score = 0;
 
     }
 }
