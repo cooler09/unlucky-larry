@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e955408a-7380-4ad4-a22f-136c9d8bd73d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriviaLogic.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/TriviaLogic.cs" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.unlucky-larry/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.unlucky-larry/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Assets/scenes/Hallway.unity" afterPath="$PROJECT_DIR$/Assets/scenes/Hallway.unity" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EndGame.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EndGame.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/EndGame.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -127,10 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupLogic.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GroupLogic.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GroupLogic.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="591">
               <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
               <folding>
                 <marker date="1530057684628" expanded="false" signature="6:137" ph="..." />
@@ -348,12 +348,12 @@
       <workItem from="1529857114096" duration="5153000" />
       <workItem from="1529884059084" duration="5172000" />
       <workItem from="1529942922775" duration="7806000" />
-      <workItem from="1530015819483" duration="11239000" />
+      <workItem from="1530015819483" duration="12437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51582000" />
+    <option name="totallyTimeSpent" value="52780000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -720,22 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GroupLogic.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding>
-            <marker date="1530057684628" expanded="false" signature="6:137" ph="..." />
-            <marker date="1530057684628" expanded="true" signature="178:861" ph="{...}" />
-            <marker date="1530057684628" expanded="true" signature="321:401" ph="{...}" />
-            <marker date="1530057684628" expanded="true" signature="417:650" ph="{...}" />
-            <marker date="1530057684628" expanded="true" signature="471:647" ph="{...}" />
-            <marker date="1530057684628" expanded="true" signature="689:859" ph="{...}" />
-            <marker date="1530057684628" expanded="true" signature="734:856" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TriviaLogic.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -767,6 +751,22 @@
             <marker date="1529971710944" expanded="false" signature="6:113" ph="..." />
             <marker date="1529971710944" expanded="true" signature="152:283" ph="{...}" />
             <marker date="1529971710944" expanded="true" signature="196:281" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GroupLogic.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <marker date="1530057684628" expanded="false" signature="6:137" ph="..." />
+            <marker date="1530057684628" expanded="true" signature="178:861" ph="{...}" />
+            <marker date="1530057684628" expanded="true" signature="321:401" ph="{...}" />
+            <marker date="1530057684628" expanded="true" signature="417:650" ph="{...}" />
+            <marker date="1530057684628" expanded="true" signature="471:647" ph="{...}" />
+            <marker date="1530057684628" expanded="true" signature="689:859" ph="{...}" />
+            <marker date="1530057684628" expanded="true" signature="734:856" ph="{...}" />
           </folding>
         </state>
       </provider>
