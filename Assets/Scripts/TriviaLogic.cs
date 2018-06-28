@@ -47,7 +47,7 @@ public class TriviaLogic : MonoBehaviour
 			return;
 		}
 
-		if (loadNextQuestion )//&& DateTime.Now > answerTimer.AddSeconds(2.0))
+		if (loadNextQuestion && DateTime.Now > answerTimer.AddSeconds(2.0))
 		{
 			Debug.Log("load next");
 			LoadNextQuestion();
