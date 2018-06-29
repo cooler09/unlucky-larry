@@ -42,13 +42,12 @@ public class TriviaLogic : MonoBehaviour
 		if ((questions == null || questions.Count == 0) && !string.IsNullOrEmpty(Global.CurrentEnemy))
 			LoadQuestions();
 
-		if (currentQuestionCount >= TotalQuestions)
+		if (currentQuestionCount >= TotalQuestions && DateTime.Now > answerTimer.AddSeconds(2.0))
 		{
 			Done();
 			return;
 		}
-
-		if (loadNextQuestion && DateTime.Now > answerTimer.AddSeconds(2.0))
+		else if (loadNextQuestion && DateTime.Now > answerTimer.AddSeconds(2.0))
 		{
 			Debug.Log("load next");
 			LoadNextQuestion();
@@ -138,16 +137,20 @@ public class TriviaLogic : MonoBehaviour
 		button3.GetComponentsInChildren<Text>()[0].text = ans3.title;
 		button4.GetComponentsInChildren<Text>()[0].text = ans4.title;
 		
+		ClearButtons();
+		loadNextQuestion = false;
+	}
+
+	void ClearButtons()
+	{
 		SetButtonColor(button1,Color.white);
 		SetButtonColor(button2,Color.white);
 		SetButtonColor(button3,Color.white);
 		SetButtonColor(button4,Color.white);
-		loadNextQuestion = false;
 	}
-	
-
 	void Done()
 	{
+		ClearButtons();
 		currentQuestionCount = 0;
 		questions = null;
 		Global.CanMove = true;
