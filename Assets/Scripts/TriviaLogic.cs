@@ -19,6 +19,7 @@ public class TriviaLogic : MonoBehaviour
 	private List<Question> questions;
 	private bool loadNextQuestion = false;
 	private DateTime answerTimer;
+	private int TotalQuestions = 3;
 
 	// Use this for initialization
 	void Start ()
@@ -41,7 +42,7 @@ public class TriviaLogic : MonoBehaviour
 		if ((questions == null || questions.Count == 0) && !string.IsNullOrEmpty(Global.CurrentEnemy))
 			LoadQuestions();
 
-		if (currentQuestionCount >= 10)
+		if (currentQuestionCount >= TotalQuestions)
 		{
 			Done();
 			return;
@@ -102,7 +103,7 @@ public class TriviaLogic : MonoBehaviour
 
 
 		currentQuestionCount++;
-		if (currentQuestionCount < 10)
+		if (currentQuestionCount < TotalQuestions)
 			loadNextQuestion = true;
 		answerTimer = DateTime.Now;
 	}

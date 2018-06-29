@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GroupLogic : MonoBehaviour
 {
+	
 
 	public string EnemyName;
 	public AudioClip SceneEnter;

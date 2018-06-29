@@ -12,8 +12,8 @@ public class GameState : MonoBehaviour
 	void Start () {
 
 		//get data from api and put in static global class	
-		//StartCoroutine(GetGameStateData());
-		LoadFakeData();
+		StartCoroutine(GetGameStateData());
+		//LoadFakeData();
 	}
 
 	void LoadFakeData()
@@ -112,10 +112,8 @@ public class GameState : MonoBehaviour
 		yield return api;
 		if (string.IsNullOrEmpty(api.error))
 		{
-			var data = JsonConvert.DeserializeObject<GameStateData>(api.text);
+			Global.TriviaInfo= JsonConvert.DeserializeObject<GameStateData>(api.text).questions;
 			
-			Global.UserId = data.UserId;
-			Debug.Log(data.UserId);
 		}
 		else
 			Debug.Log(api.error);
