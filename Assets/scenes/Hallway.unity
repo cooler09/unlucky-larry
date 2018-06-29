@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyName: jock
-  SceneEnter: {fileID: 8300000, guid: 7eb9c4f8eabccea4786a49286fda3720, type: 3}
+  SceneEnter: {fileID: 0}
 --- !u!1 &78364250
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyName: emo
-  SceneEnter: {fileID: 8300000, guid: 7eb9c4f8eabccea4786a49286fda3720, type: 3}
+  SceneEnter: {fileID: 0}
 --- !u!1001 &240685897
 Prefab:
   m_ObjectHideFlags: 0
@@ -680,6 +680,39 @@ Prefab:
         type: 2}
       propertyPath: m_SortingLayer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461403446920790, guid: 806b8c7c94e700848a75ecb176789581, type: 2}
+      propertyPath: m_Name
+      value: Hipster
+      objectReference: {fileID: 0}
+    - target: {fileID: 212778095768538908, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a3df5559fac84b6478b09bfbe4f93c50,
+        type: 3}
+    - target: {fileID: 212598659938606884, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e754a7fdd0ebf874f9d41d00aa8ab0e2,
+        type: 3}
+    - target: {fileID: 212997936235590796, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5cd781df19a79004c994f6fab452777d,
+        type: 3}
+    - target: {fileID: 212401689632791470, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1133fade147bd40409987aca6d3593fe,
+        type: 3}
+    - target: {fileID: 212997936235590796, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 806b8c7c94e700848a75ecb176789581, type: 2}
@@ -962,6 +995,34 @@ Prefab:
       propertyPath: m_SortingLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1461403446920790, guid: 806b8c7c94e700848a75ecb176789581, type: 2}
+      propertyPath: m_Name
+      value: Popular-Girls
+      objectReference: {fileID: 0}
+    - target: {fileID: 212778095768538908, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 86b9bc4f4d09484469bb396387aa876a,
+        type: 3}
+    - target: {fileID: 212598659938606884, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 59ddaaa07190a5347a9943d1a77ac898,
+        type: 3}
+    - target: {fileID: 212997936235590796, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c776b367f013fb842b09a5fe63c0a776,
+        type: 3}
+    - target: {fileID: 212401689632791470, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 83507fa566d3a3a43b4eb2e252c3d49d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 806b8c7c94e700848a75ecb176789581, type: 2}
   m_IsPrefabParent: 0
@@ -1335,7 +1396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyName: hipster
-  SceneEnter: {fileID: 8300000, guid: 7eb9c4f8eabccea4786a49286fda3720, type: 3}
+  SceneEnter: {fileID: 0}
 --- !u!1 &1058529878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,7 +2036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyName: popular-girl
-  SceneEnter: {fileID: 8300000, guid: 7eb9c4f8eabccea4786a49286fda3720, type: 3}
+  SceneEnter: {fileID: 0}
 --- !u!1 &1340707087
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,7 +2840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyName: nerd
-  SceneEnter: {fileID: 8300000, guid: 7eb9c4f8eabccea4786a49286fda3720, type: 3}
+  SceneEnter: {fileID: 0}
 --- !u!1001 &1650689946
 Prefab:
   m_ObjectHideFlags: 0
@@ -2859,6 +2920,38 @@ Prefab:
       propertyPath: m_SortingLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1696546636762284, guid: 806b8c7c94e700848a75ecb176789581, type: 2}
+      propertyPath: m_Name
+      value: Member
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461403446920790, guid: 806b8c7c94e700848a75ecb176789581, type: 2}
+      propertyPath: m_Name
+      value: Nerd
+      objectReference: {fileID: 0}
+    - target: {fileID: 212778095768538908, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 62e4202754edc654285fe29ce2381eab,
+        type: 3}
+    - target: {fileID: 212598659938606884, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 290c832fa427c53428855a177a44d982,
+        type: 3}
+    - target: {fileID: 212997936235590796, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 63842130894f7ac468e3e0bcd7ffba83,
+        type: 3}
+    - target: {fileID: 212401689632791470, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52f9d6d0275b5d045b388cddfd375ff2,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 806b8c7c94e700848a75ecb176789581, type: 2}
   m_IsPrefabParent: 0
@@ -3507,6 +3600,34 @@ Prefab:
       propertyPath: m_SortingLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1461403446920790, guid: 806b8c7c94e700848a75ecb176789581, type: 2}
+      propertyPath: m_Name
+      value: Jock
+      objectReference: {fileID: 0}
+    - target: {fileID: 212778095768538908, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9cf44aac4ea55bd4bba01f81ffeee178,
+        type: 3}
+    - target: {fileID: 212598659938606884, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9802887a177bb5b43820d42551636493,
+        type: 3}
+    - target: {fileID: 212997936235590796, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a1366f0997cbdaf44b6b7ebf87656b3b,
+        type: 3}
+    - target: {fileID: 212401689632791470, guid: 806b8c7c94e700848a75ecb176789581,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f624ba06c6f4cc34c8dfa89a7577ab01,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 806b8c7c94e700848a75ecb176789581, type: 2}
   m_IsPrefabParent: 0
