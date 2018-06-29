@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e955408a-7380-4ad4-a22f-136c9d8bd73d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unlucky-larry/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.unlucky-larry/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="TriviaLogic.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TriviaLogic.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/TriviaLogic.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="667">
@@ -39,6 +39,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Menu.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+              <folding>
+                <marker date="1530242832548" expanded="false" signature="6:135" ph="..." />
+                <marker date="1530242832548" expanded="true" signature="171:750" ph="{...}" />
+                <marker date="1530242832548" expanded="true" signature="220:388" ph="{...}" />
+                <marker date="1530242832548" expanded="true" signature="317:385" ph="{...}" />
+                <marker date="1530242832548" expanded="true" signature="415:748" ph="{...}" />
+                <marker date="1530242832548" expanded="true" signature="434:745" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="EndGame.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/EndGame.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,20 +65,6 @@
                 <marker date="1529971710944" expanded="false" signature="6:113" ph="..." />
                 <marker date="1529971710944" expanded="true" signature="152:283" ph="{...}" />
                 <marker date="1529971710944" expanded="true" signature="196:281" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScoreText.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/ScoreText.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <marker date="1530062751860" expanded="true" signature="6:124" ph="..." />
-                <marker date="1530062751860" expanded="true" signature="165:294" ph="{...}" />
-                <marker date="1530062751860" expanded="true" signature="220:292" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -220,7 +223,6 @@
         <option value="$PROJECT_DIR$/Assets/GlobalData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GlobalAccess.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameLoad.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu.cs" />
         <option value="$PROJECT_DIR$/Assets/AnimatedSection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ImageLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/EndGame.cs" />
@@ -240,6 +242,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameStateData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriviaLogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu.cs" />
       </list>
     </option>
   </component>
@@ -348,12 +351,12 @@
       <workItem from="1529884059084" duration="5172000" />
       <workItem from="1529942922775" duration="7806000" />
       <workItem from="1530015819483" duration="12437000" />
-      <workItem from="1530225496335" duration="7081000" />
+      <workItem from="1530225496335" duration="7661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59861000" />
+    <option name="totallyTimeSpent" value="60441000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -365,20 +368,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="3084" height="1826" extended-state="6" />
+    <frame x="-13" y="-13" width="2604" height="1562" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939714" sideWeight="0.501308" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39405206" sideWeight="0.50155157" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25735775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3052754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939714" sideWeight="0.49869195" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39405206" sideWeight="0.4984484" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -468,13 +471,6 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/QuestionApi.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GlobalAccess.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameLoad.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="24" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemyData.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ImageLoader.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/GameState.cs" />
@@ -655,6 +651,21 @@
             <marker date="1530241611192" expanded="true" signature="2867:3710" ph="{...}" />
             <marker date="1530241611192" expanded="true" signature="3732:3894" ph="{...}" />
             <marker date="1530241611192" expanded="true" signature="3907:4033" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding>
+            <marker date="1530242832548" expanded="false" signature="6:135" ph="..." />
+            <marker date="1530242832548" expanded="true" signature="171:750" ph="{...}" />
+            <marker date="1530242832548" expanded="true" signature="220:388" ph="{...}" />
+            <marker date="1530242832548" expanded="true" signature="317:385" ph="{...}" />
+            <marker date="1530242832548" expanded="true" signature="415:748" ph="{...}" />
+            <marker date="1530242832548" expanded="true" signature="434:745" ph="{...}" />
           </folding>
         </state>
       </provider>

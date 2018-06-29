@@ -22,7 +22,7 @@ public class Menu : MonoBehaviour {
 		switch (type)
 		{
 			case "btnStory":
-				SceneManager.LoadScene("scenes/GameStart", LoadSceneMode.Single);
+				SceneManager.LoadScene("scenes/Hallway", LoadSceneMode.Single);
 				break;
 			case "btnQuickPlay":
 				SceneManager.LoadScene("scenes/GameStart", LoadSceneMode.Single);
