@@ -20,6 +20,6 @@ public class EndGameReplay : MonoBehaviour {
 		Global.CurrentEnemy = "emo";
 		Global.showTrivia = false;
 		Global.Score = 0;
-		SceneManager.LoadScene("scenes/Hallway", LoadSceneMode.Single);
+		SceneManager.LoadScene("scenes/Menu", LoadSceneMode.Single);
 	}
 }
